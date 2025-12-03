@@ -1,3 +1,5 @@
+'use client';
+
 const characters = [
   {
     name: 'James Sunderland',
@@ -24,7 +26,7 @@ const characters = [
 
 export default function Characters() {
   return (
-    <div className="w-screen max-w-[1300px] py-24">
+    <section id="characters" className="w-screen max-w-[1300px] py-24">
       <div className="grid grid-cols-3 gap-16">
         {characters.map((character, key) => (
           <div key={key} className="h-[600px] bg-black relative text-center rounded-xl">
@@ -36,6 +38,6 @@ export default function Characters() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }

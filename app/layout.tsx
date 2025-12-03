@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Saira } from "next/font/google";
+import LenisProvider from "./lenis-provider";
 import "./globals.css";
 
 const saira = Saira({
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${saira.variable} antialiased`}
       >
-        {children}
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
