@@ -15,8 +15,8 @@ export default function Header() {
       </button>
       <div className="flex gap-4">
         <button onClick={() => scrollTo('#story')} className="hover:text-neutral-500 cursor-pointer">Story</button>
-        <button onClick={() => scrollTo('#concept')} className="hover:text-neutral-500 cursor-pointer">Concept</button>
         <button onClick={() => scrollTo('#characters')} className="hover:text-neutral-500 cursor-pointer">Characters</button>
+        <button onClick={() => scrollTo('#concept')} className="hover:text-neutral-500 cursor-pointer">Concept</button>
         <button onClick={() => scrollTo('#gallery')} className="hover:text-neutral-500 cursor-pointer">Gallery</button>
       </div>
     </div>

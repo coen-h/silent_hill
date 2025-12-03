@@ -3,7 +3,7 @@
 export default function Hero() {
   return (
     <section id="hero" className="w-screen h-screen relative">
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent to-neutral-950" />
+      <div className="absolute inset-0 pointer-events-none bg-linear-to-b from-transparent to-neutral-950" />
       <div className="flex flex-col gap-4 absolute bottom-8 left-8">
         <img className="w-[600px]" src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Silent_hill_2_Remake_logo.png/1200px-Silent_hill_2_Remake_logo.png'/>
         <p className="text-xl w-[600px]">James arrives in Silent Hill after receiving a letter from his wife Mary, who died three years earlier from a degenerative disease.</p>
