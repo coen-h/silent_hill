@@ -13,9 +13,9 @@ export default function Home() {
     <div className="flex flex-col items-center">
       <Header />
       <Hero />
-      <Story />
-      <Characters />
       <Concept />
+      <Characters />
+      <Story />
       <Gallery />
       <Footer />
       <div className="fixed inset-0 pointer-events-none bg-linear-to-t from-90% to-red-950/20" />
