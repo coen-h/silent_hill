@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <div className="flex fixed border-x border-b border-neutral-900 bg-black/25 backdrop-blur rounded-b-xl justify-between items-center top-0 z-50 py-2 px-3 max-w-[1600px] w-full">
       <button className="hover:opacity-50 cursor-pointer" onClick={() => scrollTo('#hero')}>
-        <img className="h-12" src="https://companieslogo.com/img/orig/6BO.SG.D-68bbfc94.png?t=1720244490" />
+        <img className="h-10" src="https://companieslogo.com/img/orig/6BO.SG.D-68bbfc94.png?t=1720244490" />
       </button>
       <div className="flex gap-4">
         <button onClick={() => scrollTo('#story')} className="hover:text-neutral-500 cursor-pointer">Story</button>
