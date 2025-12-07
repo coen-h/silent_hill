@@ -1,28 +1,57 @@
 'use client';
+import { useEffect, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+
+const clips =  [
+  {
+    src: '/rec1c.mp4',
+  },
+  {
+    src: '/rec2c.mp4',
+  },
+  {
+    src: '/rec3c.mp4',
+  },
+  {
+    src: '/rec4c.mp4',
+  },
+]
 
 export default function Concept() {
   return (
-    <section id="concept" className="w-screen h-screen relative">
-      <div className="absolute inset-0 pointer-events-none bg-linear-to-t to-neutral-950" />
-      <div className="absolute inset-0 pointer-events-none bg-linear-to-b to-neutral-950" />
-      <div className="grid grid-cols-4">
-        <img className="h-[25vh] w-full object-cover" src='mir.webp' />
-        <img className="h-[25vh] w-full object-cover" src='pyr.jpg' />
-        <img className="h-[25vh] w-full object-cover" src='ten.png' />
-        <img className="h-[25vh] w-full object-cover" src='nei.webp' />
-        <img className="h-[25vh] w-full object-cover" src='bag.webp' />
-        <img className="h-[25vh] w-full object-cover" src='bat.webp' />
-        <img className="h-[25vh] w-full object-cover" src='pyr2.jpg' />
-        <img className="h-[25vh] w-full object-cover" src='sta.jpg' />
-        <img className="h-[25vh] w-full object-cover" src='pyr3.webp' />
-        <img className="h-[25vh] w-full object-cover" src='cha.webp' />
-        <img className="h-[25vh] w-full object-cover" src='dic.webp' />
-        <img className="h-[25vh] w-full object-cover" src='man.webp' />
-        <img className="h-[25vh] w-full object-cover" src='red.webp' />
-        <img className="h-[25vh] w-full object-cover" src='mov.webp' />
-        <img className="h-[25vh] w-full object-cover" src='sta.jpg' />
-        <img className="h-[25vh] w-full object-cover" src='stai.webp' />
+    <section id="concept" className="relative h-screen w-screen">
+      <div className="absolute inset-0">
+        {clips.map((clip, index) => (
+          <VideoStrip key={index++} clipSrc={clip.src} delay={(index + 1) * 0.06} />
+        ))}
       </div>
+      <div className="pointer-events-none absolute inset-0 bg-linear-to-b to-neutral-950" />
+      <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-50% to-neutral-950" />
+      <p></p>
     </section>
-  )
+  );
+}
+
+function VideoStrip({ clipSrc, delay }: { clipSrc: string; delay: number }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const inView = useInView(videoRef, { amount: 0.4 });
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (inView) {
+      video.currentTime = 0;
+      video.play().catch(() => undefined);
+    } else {
+      video.pause();
+      video.currentTime = 0;
+    }
+  }, [inView]);
+
+  return (
+    <motion.video ref={videoRef} transition={{ duration: 0.6, delay, ease: 'easeOut' }} initial={{ opacity: 0, filter: 'blur(8px)' }} whileInView={{ opacity: 1, filter: 'blur(0px)' }} viewport={{ amount: 0.4 }} className="h-[25vh] w-full object-cover" playsInline muted loop={false} controls={false} preload="metadata">
+      <source src={clipSrc} type="video/mp4" />
+    </motion.video>
+  );
 }
