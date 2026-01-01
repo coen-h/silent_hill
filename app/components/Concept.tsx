@@ -4,16 +4,16 @@ import { motion, useInView } from 'framer-motion';
 
 const clips =  [
   {
-    src: '/rec1c.mp4',
+    src: '/rec1ce.mp4',
   },
   {
-    src: '/rec2c.mp4',
+    src: '/rec2ce.mp4',
   },
   {
-    src: '/rec3c.mp4',
+    src: '/rec3ce.mp4',
   },
   {
-    src: '/rec4c.mp4',
+    src: '/rec4ce.mp4',
   },
 ]
 
@@ -27,7 +27,6 @@ export default function Concept() {
       </div>
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b to-neutral-950" />
       <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-50% to-neutral-950" />
-      <p></p>
     </section>
   );
 }
