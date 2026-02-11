@@ -49,7 +49,7 @@ function VideoStrip({ clipSrc, delay }: { clipSrc: string; delay: number }) {
   }, [inView]);
 
   return (
-    <motion.video ref={videoRef} transition={{ duration: 0.6, delay, ease: 'easeOut' }} initial={{ opacity: 0, filter: 'blur(8px)' }} whileInView={{ opacity: 1, filter: 'blur(0px)' }} viewport={{ amount: 0.4 }} className="h-[25vh] w-full object-cover" playsInline muted loop={false} controls={false} preload="metadata">
+    <motion.video ref={videoRef} transition={{ duration: 0.6, delay, ease: 'easeOut' }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ amount: 0.4 }} className="h-[25vh] w-full object-cover" playsInline muted loop={false} controls={false} preload="metadata">
       <source src={clipSrc} type="video/mp4" />
     </motion.video>
   );

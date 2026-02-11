@@ -17,10 +17,10 @@ export default function Header() {
         <img className="h-10" src="https://companieslogo.com/img/orig/6BO.SG.D-68bbfc94.png?t=1720244490" />
       </button>
       <div className="flex gap-4">
-        <button onClick={() => scrollTo('#concept')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Concept</button>
-        <button onClick={() => scrollTo('#characters')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Characters</button>
-        <button onClick={() => scrollTo('#story')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Story</button>
-        <button onClick={() => scrollTo('#gallery')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Gallery</button>
+        <motion.button transition={{ duration: 0.6 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#concept')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Concept</motion.button>
+        <motion.button transition={{ duration: 0.6, delay: 0.2 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#characters')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Characters</motion.button>
+        <motion.button transition={{ duration: 0.6, delay: 0.4 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#story')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Story</motion.button>
+        <motion.button transition={{ duration: 0.6, delay: 0.6 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#gallery')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Gallery</motion.button>
       </div>
     </motion.div>
     </motion.div>
