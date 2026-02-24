@@ -1,13 +1,17 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, ReactNode } from "react";
 import Lenis from "lenis";
 
-export default function LenisProvider({ children }) {
+interface LenisProviderProps {
+  children: ReactNode;
+}
+
+export default function LenisProvider({ children }: LenisProviderProps) {
   useEffect(() => {
     const lenis = new Lenis();
 
-    function raf(time) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }

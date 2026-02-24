@@ -3,8 +3,9 @@
 import { motion } from 'framer-motion';
 
 export default function Header() {
-  const scrollTo = (id) => {
-    const target = document.querySelector(id);
+  const scrollTo = (id: string): void => {
+    const target = document.querySelector<HTMLElement>(id);
+
     if (window.lenis && target) {
       window.lenis.scrollTo(target, { duration: 1.4 });
     }
