@@ -1,0 +1,53 @@
+﻿{
+  "header": {
+    "img": "https://companieslogo.com/img/orig/6BO.SG.D-68bbfc94.png?t=1720244490"
+  },
+  "hero": {
+    "titleImg": "/sh1newb.webp",
+    "desc": "The Silent Hill series is a landmark of psychological horror, renowned for its oppressive atmosphere and its uncanny ability to manifest a protagonist's deepest traumas and guilt as grotesque, symbolic monsters.",
+    "video": "shvid.mp4"
+  },
+  "concept": {
+    "videos": [
+      "/rec1c.mp4",
+      "/rec2c.mp4",
+      "/rec3c.mp4",
+      "/rec4c.mp4"
+    ]
+  },
+  "characters": {
+    "characters": [
+      {
+        "name": "James Sunderland",
+        "desc": "A grieving widower pulled into Silent Hill by a letter that should be impossible.",
+        "backImage": "https://static.wikia.nocookie.net/villains/images/6/62/James_Sunderland.webp/revision/latest?cb=20250727032116",
+        "charImage": "https://www.konami.com/games/silenthill/2r/s/img/characters/person_01.png",
+        "weapImage": "/jamesWeap.webp"
+      },
+      {
+        "name": "Harry Mason",
+        "desc": "A writer and single father who crashes on the outskirts of Silent Hill and begins a desperate search for Cheryl.",
+        "backImage": "https://api.silenthillweb.com/storage/images/harry_63737a51b24ad.png",
+        "charImage": "https://i.namu.wiki/i/eVhJUpE4a7Zq_Nb4V21VBEinLUrJaALdKJHEsHY_N-YZ8hPbhDX4zD62Fb6U1GQ3T2EiC6DU0VvTmmv7c0ET8V4SFo81RJawvlIDOszhElkx4ujvzO7F7-CunHL7sJgQr8ghtu0wHM0smFy5fAKt_Q.webp",
+        "weapImage": "/pipedd.png"
+      },
+      {
+        "name": "Henry Townshend",
+        "desc": "A quiet resident of Room 302 who becomes trapped in a supernatural cycle tied to ritual murder.",
+        "backImage": "https://static.wikia.nocookie.net/silent/images/f/fd/HenryTownshend.PNG/revision/latest/smart/width/250/height/250?cb=20150219134459",
+        "charImage": "https://static.wikia.nocookie.net/silent/images/f/fd/HenryTownshend.PNG/revision/latest?cb=20150219134459",
+        "weapImage": "./chainsaw.png"
+      }
+    ]
+  },
+  "story": {
+    "desc1": "At its core, Silent Hill distinguishes itself from other horror franchises by prioritizing psychological dread over simple jump scares. The town itself acts as a living, breathing entity that shifts between a foggy, desolate reality and a rusted, blood-soaked "Otherworld." This transformation is rarely just for show; it serves as a physical reflection of the characters' internal struggles, making the environment feel deeply personal and inescapable.",
+    "desc2": "The series is also celebrated for its symbolic creature design, most notably championed by artist Masahiro Ito. Rather than generic monsters, the antagonists are often manifestations of repressed emotions, such as sexual frustration, grief, or the fear of punishment. This narrative depth, paired with Akira Yamaoka’s haunting, industrial soundtracks, has cemented the franchise as a masterclass in atmospheric storytelling that lingers long after the controller is put down."
+  },
+  "gallery": {
+    "img": "full.png"
+  },
+  "footer": {
+    "company": "Konami and Bloober Team"
+  }
+}
