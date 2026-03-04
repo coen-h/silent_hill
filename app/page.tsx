@@ -41,7 +41,7 @@ export default function Home() {
         <div onClick={e => setSelectedSite(2)} className='h-5 w-5 bg-white/40 rounded-lg cursor-pointer'></div>
         <div onClick={e => setSelectedSite(3)} className='h-5 w-5 bg-white/40 rounded-lg cursor-pointer'></div>
       </div> */}
-      <Header data={data.header} />
+      <Header />
       <Hero data={data.hero} />
       {/* <Concept data={data.concept} /> */}
       <Characters data={data.characters} />

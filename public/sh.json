@@ -18,18 +18,25 @@
   "characters": {
     "characters": [
       {
-        "name": "James Sunderland",
-        "desc": "A grieving widower pulled into Silent Hill by a letter that should be impossible.",
-        "backImage": "https://static.wikia.nocookie.net/villains/images/6/62/James_Sunderland.webp/revision/latest?cb=20250727032116",
-        "charImage": "https://www.konami.com/games/silenthill/2r/s/img/characters/person_01.png",
-        "weapImage": "/jamesWeap.webp"
-      },
-      {
         "name": "Harry Mason",
-        "desc": "A writer and single father who crashes on the outskirts of Silent Hill and begins a desperate search for Cheryl.",
+        "desc": "A widowed single father who crashes on the outskirts of Silent Hill and begins a desperate search for his daughter.",
         "backImage": "https://api.silenthillweb.com/storage/images/harry_63737a51b24ad.png",
         "charImage": "https://i.namu.wiki/i/eVhJUpE4a7Zq_Nb4V21VBEinLUrJaALdKJHEsHY_N-YZ8hPbhDX4zD62Fb6U1GQ3T2EiC6DU0VvTmmv7c0ET8V4SFo81RJawvlIDOszhElkx4ujvzO7F7-CunHL7sJgQr8ghtu0wHM0smFy5fAKt_Q.webp",
         "weapImage": "/pipedd.png"
+      },
+      {
+        "name": "James Sunderland",
+        "desc": "A grieving widower pulled into Silent Hill by a letter that should be impossible.",
+        "backImage": "https://static.wikia.nocookie.net/villains/images/6/62/James_Sunderland.webp/revision/latest?cb=20250727032116",
+        "charImage": "https://static.wikia.nocookie.net/silenthill/images/c/c5/SH2R_-_James_Sunderland_cuerpo_completo.png/revision/latest/scale-to-width/360?cb=20240915063233&path-prefix=es",
+        "weapImage": "/jamesWeap.webp"
+      },
+      {
+        "name": "Heather Mason",
+        "desc": "She is the reincarnation of Alessa Gillespie and Cheryl Mason, serving as a central figure in a cult's plot to birth their 'God'.",
+        "backImage": "https://www.silenthillmemories.net/sh3/characters/heather.png",
+        "charImage": "https://i.namu.wiki/i/w6R6dMe3WaLaBorxdhiqgurKtDnm1nDJV3EUaKVZ2O3_LdjktdzeoHoaCzGCZ2FMdkDonp2-XrIG3lvo5gztMQ.webp",
+        "weapImage": "/knifee.png"
       },
       {
         "name": "Henry Townshend",
@@ -41,7 +48,7 @@
     ]
   },
   "story": {
-    "desc1": "At its core, Silent Hill distinguishes itself from other horror franchises by prioritizing psychological dread over simple jump scares. The town itself acts as a living, breathing entity that shifts between a foggy, desolate reality and a rusted, blood-soaked "Otherworld." This transformation is rarely just for show; it serves as a physical reflection of the characters' internal struggles, making the environment feel deeply personal and inescapable.",
+    "desc1": "At its core, Silent Hill distinguishes itself from other horror franchises by prioritizing psychological dread over simple jump scares. The town itself acts as a living, breathing entity that shifts between a foggy, desolate reality and a rusted, blood-soaked 'Otherworld.' This transformation is rarely just for show; it serves as a physical reflection of the characters' internal struggles, making the environment feel deeply personal and inescapable.",
     "desc2": "The series is also celebrated for its symbolic creature design, most notably championed by artist Masahiro Ito. Rather than generic monsters, the antagonists are often manifestations of repressed emotions, such as sexual frustration, grief, or the fear of punishment. This narrative depth, paired with Akira Yamaoka’s haunting, industrial soundtracks, has cemented the franchise as a masterclass in atmospheric storytelling that lingers long after the controller is put down."
   },
   "gallery": {
