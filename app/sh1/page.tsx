@@ -1,16 +1,53 @@
 'use client';
 
 import Header from "@/app/components/Header";
+import Characters from "@/app/components/Characters";
+
+const charactersData = {
+  data: {
+    characters: [
+      {
+        name: "Harry Mason",
+        desc: "As the main character, Harry Mason is a widowed writer whose wife died four years ago from a disease, leaving him to care for his seven-year-old adopted daughter, Cheryl. Harry has brown hair and brown eyes and is a kind, caring man who deeply loves his daughter. After Cheryl repeatedly begged him to take her to Silent Hill, he finally agreed, but a mysterious car crash at the town’s edge separates them. Alone and determined, Harry steps into the fog-shrouded streets, ready to face the town’s strange and terrifying secrets to find and save Cheryl.",
+        backImage: "https://www.silenthillmemories.net/sh1/characters/harry_mason.png",
+        charImage: "https://static.wikia.nocookie.net/videogameresource/images/9/94/230px-HarryMason.png/revision/latest?cb=20110708174546",
+        weapImage: ""
+      },
+      {
+        name: "Cheryl Mason",
+        desc: "Cheryl Mason is Harry Mason’s quiet and mysterious young daughter in Silent Hill. After a sudden car crash at the entrance to town, she vanishes without a trace, becoming the driving force behind Harry’s desperate search. Though often seen only in brief, haunting moments, Cheryl’s presence is central to the story and deeply tied to the town’s dark secrets.",
+        backImage: "https://www.silenthillmemories.net/sh1/characters/cheryl_mason.png",
+        charImage: "https://i.namu.wiki/i/ZuROkBbZiDtSO5HXnMIBwtZWKCV2ekWnFup4GaT1_aPZmy_LdxBJvcvVjPbnlCJsewTp6z_JjlkwaAiZUHangw.webp",
+        weapImage: ""
+      },
+      {
+        name: "Cybil Bennett",
+        desc: "Cybil Bennett is a police officer from the nearby town of Brahms who discovers Harry unconscious inside a café, becoming his first ally in Silent Hill. Blonde-haired and level-headed, she listens to his story and chooses to believe him, even handing over her gun for protection. As Harry continues searching for Cheryl, Cybil tries to leave town to get backup, only to find that all communication lines are cut.",
+        backImage: "https://www.silenthillmemories.net/sh1/characters/cybil_bennet.png",
+        charImage: "https://static.wikia.nocookie.net/silent/images/8/87/Cybil_Bennettmm.png/revision/latest/scale-to-width-down/157?cb=20220306133929",
+        weapImage: ""
+      },
+      {
+        name: "Dahlia Gillespie",
+        desc: "First summoning Harry to a church by ringing its bell, Dahlia is a crazy lady with brown hair, blue eyes, lots of eye shadow, and strange clothing. In each meeting she feeds Harry what certainly sounds like crazy talk to help him find his daughter, but she always leaves quickly without further explanation. As told by Lisa, Dahlia apparently lost her child in a fire and has been crazy ever since.",
+        backImage: "https://www.silenthillmemories.net/sh1/characters/dahlia_gillespie.png",
+        charImage: "/we1.png",
+        weapImage: ""
+      }
+    ]
+  }
+};
 
 export default function Page() {
   return (
     <div>
-          <Header />
-          <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
-            <img className="mb-150 w-160 invert" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/SILENT_HILL_2_LOGO_%28Alt.%29.svg/960px-SILENT_HILL_2_LOGO_%28Alt.%29.svg.png' />
-          </div>
-          <img className="w-screen h-screen object-cover z-[-1]" autoPlay muted loop playsInline preload="auto" src='/sh2p.mp4' />
-          <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen" />
-        </div>
+      <Header />
+      <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
+        <img className="mb-150 w-160 invert" src='https://1000logos.net/wp-content/uploads/2021/04/Silent-Hill-Logo-1999.png' />
+      </div>
+      <img className="w-screen h-screen object-cover z-[-1]" src='https://blob.udgtv.com/images/2025/06/16/1-b223e271-focus-0-0-696-464.jpg' />
+      <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen" />
+      <Characters data={charactersData.data} />
+    </div>
   );
 }

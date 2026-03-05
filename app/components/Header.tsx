@@ -26,9 +26,7 @@ export default function Header() {
       <div className="flex gap-4 items-center">
         {/* <motion.button transition={{ duration: 0.6 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#concept')} className="hover:text-neutral-500 transition-colors cursor-pointer max-sm:text-sm">Concept</motion.button> */}
         <div className="relative w-24 group">
-          <div className="w-full bg-black/60 border text-center text-lg border-neutral-800 rounded-sm px-3 py-1.5 cursor-pointer">
-            Series
-          </div>
+          <div className="w-full bg-black/60 border text-center text-lg border-neutral-800 rounded-sm px-3 py-1.5 cursor-pointer">Series</div>
           <div className="absolute left-0 mt-1 w-80 bg-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
             {games.map((game) => (
               <div key={game.path} className="px-4 py-2 hover:bg-white/10 first:rounded-t-lg last:rounded-b-lg text-lg cursor-pointer" onClick={() => { window.location.href = game.path; }}>
