@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-export default function Header() {
+export default function Header({ data }) {
   const games = [
     { name: "Silent Hill 1", path: "/sh1" },
     { name: "Silent Hill 2", path: "/sh2" },
@@ -35,9 +36,21 @@ export default function Header() {
             ))}
           </div>
         </div>
-        <motion.button transition={{ duration: 0.6, delay: 0.2 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#characters')} className="hover:text-neutral-500 transition-colors text-lg cursor-pointer max-sm:text-sm">Characters</motion.button>
+        {data && data.map((button) => (
+          <Link href={button.path}>
+            <motion.button 
+              transition={{ duration: 0.6, delay: button.delay }} 
+              initial={{ opacity: 0, filter: "blur(8px)" }} 
+              whileInView={{ opacity: 1, filter: "blur(0px)" }} 
+              className="hover:text-neutral-500 transition-colors text-lg cursor-pointer max-sm:text-sm"
+            >
+              {button.name}
+            </motion.button>
+          </Link>
+        ))}
+        {/* <motion.button transition={{ duration: 0.6, delay: 0.2 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#characters')} className="hover:text-neutral-500 transition-colors text-lg cursor-pointer max-sm:text-sm">Characters</motion.button>
         <motion.button transition={{ duration: 0.6, delay: 0.4 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#music')} className="hover:text-neutral-500 transition-colors text-lg cursor-pointer max-sm:text-sm">Music</motion.button>
-        <motion.button transition={{ duration: 0.6, delay: 0.6 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#artwork')} className="hover:text-neutral-500 transition-colors text-lg cursor-pointer max-sm:text-sm">Artwork</motion.button>
+        <motion.button transition={{ duration: 0.6, delay: 0.6 }} initial={{ opacity: 0, filter: "blur(8px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} onClick={() => scrollTo('#artwork')} className="hover:text-neutral-500 transition-colors text-lg cursor-pointer max-sm:text-sm">Artwork</motion.button> */}
       </div>
     </motion.div>
   )

@@ -52,6 +52,8 @@ export default function Page() {
       </div>
       <video className="w-screen h-screen object-cover z-[-1]" autoPlay muted loop playsInline preload="auto" src='/sh3p.mp4' />
       <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen" />
+      <div className="max-w-[1000px] h-[700px] bg-white ">
+      </div>
       <Characters data={charactersData.data} />
     </div>
   );

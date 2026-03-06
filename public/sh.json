@@ -1,7 +1,21 @@
 ﻿{
-  "header": {
-    "img": "https://companieslogo.com/img/orig/6BO.SG.D-68bbfc94.png?t=1720244490"
-  },
+  "header": [
+      {
+        "name": "Characters",
+        "path": "/characters",
+        "delay": 0.2
+      },
+      {
+        "name": "Artwork",
+        "path": "/artwork",
+        "delay": 0.4
+      },
+      {
+        "name": "Music",
+        "path": "/music",
+        "delay": 0.6
+      }
+    ],
   "hero": {
     "titleImg": "/sh1newb.webp",
     "desc": "The Silent Hill series is a landmark of psychological horror, renowned for its oppressive atmosphere and its uncanny ability to manifest a protagonist's deepest traumas and guilt as grotesque, symbolic monsters.",
@@ -27,8 +41,8 @@
       {
         "name": "James Sunderland",
         "desc": "A grieving widower pulled into Silent Hill by a letter that should be impossible.",
-        "backImage": "https://static.wikia.nocookie.net/villains/images/6/62/James_Sunderland.webp/revision/latest?cb=20250727032116",
-        "charImage": "https://static.wikia.nocookie.net/silenthill/images/c/c5/SH2R_-_James_Sunderland_cuerpo_completo.png/revision/latest/scale-to-width/360?cb=20240915063233&path-prefix=es",
+        "backImage": "/backdd.png",
+        "charImage": "https://upload.wikimedia.org/wikipedia/en/e/e2/James_Sunderland.png",
         "weapImage": "/jamesWeap.webp"
       },
       {
