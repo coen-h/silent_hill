@@ -3,6 +3,26 @@
 import Header from "@/app/components/Header";
 import Characters from "@/app/components/Characters";
 
+const headerData = {
+  data: [
+    {
+      "name": "Characters",
+      "path": "/sh3/characters",
+      "delay": 0.2
+    },
+    {
+      "name": "Artwork",
+      "path": "/sh3/artwork",
+      "delay": 0.4
+    },
+    {
+      "name": "Music",
+      "path": "/sh3/music",
+      "delay": 0.6
+    }
+  ]
+};
+
 const charactersData = {
   data: {
     characters: [
@@ -46,7 +66,7 @@ const charactersData = {
 export default function Page() {
   return (
     <div>
-      <Header />
+      <Header data={headerData.data} />
       <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
         <img className="mb-150 w-160 invert" src='https://www.gamegrin.com/assets/game/silent-hill-3/_resampled/croppedimage1201631-silent-hill-3-image.png' />
       </div>

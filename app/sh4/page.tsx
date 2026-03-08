@@ -4,6 +4,26 @@ import { useState, useEffect, useRef } from "react";
 import Header from "@/app/components/Header";
 import Characters from "@/app/components/Characters";
 
+const headerData = {
+  data: [
+    {
+      "name": "Characters",
+      "path": "/sh4/characters",
+      "delay": 0.2
+    },
+    {
+      "name": "Artwork",
+      "path": "/sh4/artwork",
+      "delay": 0.4
+    },
+    {
+      "name": "Music",
+      "path": "/sh4/music",
+      "delay": 0.6
+    }
+  ]
+};
+
 const charactersData = {
   data: {
     characters: [
@@ -86,10 +106,10 @@ export default function Page() {
     <>
     {start === 3 ? (
       <>
-        <div className={`transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-          <Header />
+        <div>
+          <Header data={headerData.data} />
           <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
-            <img className="mb-150 w-160" src='https://www.silenthillmemories.net/sh4/assets/sh4_logo.png' />
+            <img className="mb-150 w-160" src='https://www.teamhitless.com/wp-content/uploads/2023/10/R-6.png' />
           </div>
           <img className="w-screen h-screen object-cover z-[-1]" src='https://wallpapercave.com/wp/wp15266238.jpg' />
           <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen" />
