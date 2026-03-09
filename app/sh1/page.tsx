@@ -34,13 +34,16 @@ export default function Page() {
         <div className="relative w-[900px] mx-auto h-[1200px] z-50 flex flex-col items-center justify-center p-28">
           <img src='/note8.png' className="absolute -z-1 w-full" />
           <p className="text-4xl underline text-red-800 mt-18 opacity-80">PROLOGUE</p>
-          <p className="text-lg italic text-red-900 text-center opacity-80">A world of someone's nightmarish delusions come to life. Little by little the invasion is spreading. Trying to swallow up everything in darkness.</p>
+          <p className="text-lg italic text-red-900 text-center opacity-80">A world of someone&apos;s nightmarish delusions come to life. Little by little the invasion is spreading. Trying to swallow up everything in darkness.</p>
           <div className="w-full flex flex-col mt-4 gap-2 text-black opacity-80">
             <p className="text-xl w-[500px] first-letter:text-3xl">Silent Hill is a psychological survival horror game developed by Konami and originally released on the PlayStation in 1999. The game follows writer Harry Mason, who travels to the small resort town of Silent Hill after his adopted daughter Cheryl mysteriously disappears following a car crash.</p>
             <p className="text-xl text-right w-[500px] self-end first-letter:text-3xl">As Harry searches the fog-covered streets, the town begins to shift into a nightmarish “Otherworld,” filled with disturbing creatures and rusted, decaying environments. Instead of relying only on jump scares, Silent Hill focuses on psychological horror, using atmosphere, sound design, and symbolism to create a constant feeling of dread.</p>
             <p className="text-xl w-[500px] first-letter:text-3xl">The game is known for its thick fog (originally used to mask hardware limitations), eerie soundtrack composed by Akira Yamaoka, and its complex story involving cult rituals, trauma, and alternate realities. Multiple endings encourage replayability, depending on the player’s choices throughout the game.</p>
             <p className="text-xl text-right w-[500px] self-end first-letter:text-3xl">Silent Hill became one of the most influential horror games of its time and laid the foundation for the rest of the Silent Hill series.</p>
           </div>
+        </div>
+        <div className="p-24 w-full h-full mt-20">
+          <iframe className="w-full h-full" src="https://www.retrogames.cc/embed/41684-silent-hill.html" frameBorder="0" allowFullScreen scrolling="no"></iframe>
         </div>
       </div>
     </div>
