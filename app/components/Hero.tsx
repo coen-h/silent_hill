@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 
-export default function Hero(Odata) {
+export default function Hero(Odata: {data: {titleImg: string, desc: string, video: string}}) {
   const data = Odata.data;
 
   return (

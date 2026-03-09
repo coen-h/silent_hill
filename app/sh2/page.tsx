@@ -1,7 +1,7 @@
 'use client';
 
 import Header from "@/app/components/Header";
-import Characters from "@/app/components/Characters";
+import HeroImage from "@/app/components/HeroImage";
 
 const headerData = {
   data: [
@@ -27,11 +27,7 @@ export default function Page() {
   return (
     <div>
       <Header data={headerData.data} />
-      <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
-        <img className="mb-150 w-160 invert" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/SILENT_HILL_2_LOGO_%28Alt.%29.svg/960px-SILENT_HILL_2_LOGO_%28Alt.%29.svg.png' />
-      </div>
-      <img className="w-screen h-screen object-cover z-[-1]" src='https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23475976/sh2_art_char_15.jpeg' />
-      <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen" />
+      <HeroImage logo='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/SILENT_HILL_2_LOGO_%28Alt.%29.svg/960px-SILENT_HILL_2_LOGO_%28Alt.%29.svg.png' back='https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23475976/sh2_art_char_15.jpeg' phrase='"In my restless dream, I see that town. Silent Hill."' />
     </div>
   );
 }

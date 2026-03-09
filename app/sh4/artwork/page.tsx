@@ -1,6 +1,7 @@
 'use client';
 
 import Header from "@/app/components/Header";
+import HeroImage from "@/app/components/HeroImage";
 
 const headerData = {
   data: [
@@ -26,11 +27,7 @@ export default function Page() {
   return (
     <div>
       <Header data={headerData.data} />
-      <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
-        <img className="mb-150 w-160 invert" src='https://1000logos.net/wp-content/uploads/2021/04/Silent-Hill-Logo-1999.png' />
-      </div>
-      <img className="w-screen h-screen object-cover z-[-1]" src='https://blob.udgtv.com/images/2025/06/16/1-b223e271-focus-0-0-696-464.jpg' />
-      <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen z-10" />
+      <HeroImage logo='/sh4d.png' back='https://wallpapercave.com/wp/wp15266238.jpg' phrase='"What the hell...?"' />
       <div className="absolute top-[85%] flex flex-col gap-4">
         <div className="grid grid-cols-4 gap-4">
           <img className="z-100 w-full h-100 object-cover" src='https://i.guim.co.uk/img/media/187c7e3dc8e800a96f448e92e68ae7e75b67f165/111_78_1847_1109/master/1847.jpg?width=445&dpr=1&s=none&crop=none' />

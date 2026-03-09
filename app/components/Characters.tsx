@@ -33,7 +33,7 @@ export default function Characters(Odata) {
 
         <AnimatePresence>
           {selectedCharacter && hoveredIndex !== null ? (
-            <motion.div className="fixed inset-0 z-200 bg-black/70 p-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setHoveredIndex(null)}>
+            <motion.div className="fixed inset-0 z-600 bg-black/70 p-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setHoveredIndex(null)}>
               <div className="w-full h-full bg-neutral-950 rounded-lg flex relative overflow-hidden">
                 <button onClick={() => setHoveredIndex(null)} className="absolute right-2 top-2 bg-white/40 w-8 h-8 rounded-lg z-5" />
                 <div className="w-[450px] flex justify-center relative rounded-lg">

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-export default function Gallery(Odata) {
+export default function Gallery(Odata: {data: {img: string}}) {
   const data = Odata.data;
 
   return (

@@ -2,6 +2,7 @@
 
 import Header from "@/app/components/Header";
 import Characters from "@/app/components/Characters";
+import HeroImage from "@/app/components/HeroImage";
 
 const headerData = {
   data: [
@@ -27,32 +28,40 @@ const charactersData = {
   data: {
     characters: [
       {
-        name: "Harry Mason",
-        desc: "As the main character, Harry Mason is a widowed writer whose wife died four years ago from a disease, leaving him to care for his seven-year-old adopted daughter, Cheryl. Harry has brown hair and brown eyes and is a kind, caring man who deeply loves his daughter. After Cheryl repeatedly begged him to take her to Silent Hill, he finally agreed, but a mysterious car crash at the town’s edge separates them. Alone and determined, Harry steps into the fog-shrouded streets, ready to face the town’s strange and terrifying secrets to find and save Cheryl.",
-        backImage: "https://www.silenthillmemories.net/sh4/characters/harry_mason.png",
-        charImage: "https://static.wikia.nocookie.net/videogameresource/images/9/94/230px-HarryMason.png/revision/latest?cb=20110708174546",
-        weapImage: ""
+        name: "Henry Townshend",
+        desc: "Henry Townshend is a 28-year-old photographer who lives alone in Room 302 of South Ashfield Heights. Quiet, reserved, and somewhat detached, Henry tends to keep to himself and rarely interacts with his neighbors. He has short brown hair and green eyes, and his apartment walls are decorated with his photography. Once an occasional visitor to Silent Hill in his youth, Henry suddenly finds himself trapped inside his own apartment, which has become mysteriously sealed from the inside. Confused and overwhelmed, his journey begins with a single thought echoing in his mind: 'What... the hell...?' Despite his passive demeanor, Henry is forced to confront horrors tied to the building and its dark past.",
+        backImage: "https://www.silenthillmemories.net/sh4/characters/henry.png",
+        charImage: "",
+        weapImage: "",
+        image1: "",
+        image2: "",
       },
       {
-        name: "Cheryl Mason",
-        desc: "Cheryl Mason is Harry Mason’s quiet and mysterious young daughter in Silent Hill. After a sudden car crash at the entrance to town, she vanishes without a trace, becoming the driving force behind Harry’s desperate search. Though often seen only in brief, haunting moments, Cheryl’s presence is central to the story and deeply tied to the town’s dark secrets.",
-        backImage: "https://www.silenthillmemories.net/sh4/characters/cheryl_mason.png",
-        charImage: "https://i.namu.wiki/i/ZuROkBbZiDtSO5HXnMIBwtZWKCV2ekWnFup4GaT1_aPZmy_LdxBJvcvVjPbnlCJsewTp6z_JjlkwaAiZUHangw.webp",
-        weapImage: ""
+        name: "Eileen Galvin",
+        desc: "Eileen Galvin is Henry's neighbor from Room 303 and is in her mid-20s. With brown medium-long hair and green eyes, she has lived next door to Henry for two years, though they have barely spoken beyond passing each other in the hallway. Eileen lives a quiet and somewhat uneventful life, often seen watching TV or going about her daily routine. It is not until the second half of Henry's ordeal that she becomes directly involved in the nightmare surrounding Room 302. As events escalate, Eileen becomes both a companion and a vulnerable figure deeply connected to the unfolding ritual.",
+        backImage: "https://www.silenthillmemories.net/sh4/characters/eileen.png",
+        charImage: "",
+        weapImage: "",
+        image1: "",
+        image2: "",
       },
       {
-        name: "Cybil Bennett",
-        desc: "Cybil Bennett is a police officer from the nearby town of Brahms who discovers Harry unconscious inside a café, becoming his first ally in Silent Hill. Blonde-haired and level-headed, she listens to his story and chooses to believe him, even handing over her gun for protection. As Harry continues searching for Cheryl, Cybil tries to leave town to get backup, only to find that all communication lines are cut.",
-        backImage: "https://www.silenthillmemories.net/sh4/characters/cybil_bennet.png",
-        charImage: "/sla.png",
-        weapImage: ""
+        name: "Frank Sunderland",
+        desc: "Frank is the superintendent of South Ashfield Heights. He is an old man with white hair and blue eyes and is known to talk or mumble to himself at times. In his years as the super, Frank has seen a lot of strange things around his apartment building, including in Room 302 years ago. Not much else is known about Frank, but Henry remembers hearing from him that his son and daughter-in-law went to Silent Hill and haven't been seen since. Put one and two together with his last name and you may have an idea of what that means.",
+        backImage: "https://www.silenthillmemories.net/sh4/characters/frank.png",
+        charImage: "",
+        weapImage: "",
+        image1: "",
+        image2: "",
       },
       {
-        name: "Dahlia Gillespie",
-        desc: "First summoning Harry to a church by ringing its bell, Dahlia is a crazy lady with brown hair, blue eyes, lots of eye shadow, and strange clothing. In each meeting she feeds Harry what certainly sounds like crazy talk to help him find his daughter, but she always leaves quickly without further explanation. As told by Lisa, Dahlia apparently lost her child in a fire and has been crazy ever since.",
-        backImage: "https://www.silenthillmemories.net/sh4/characters/dahlia_gillespie.png",
-        charImage: "/we1.png",
-        weapImage: ""
+        name: "Cynthia Velasquez",
+        desc: "Cynthia is an attractive woman who's not afraid to show off her curves by dressing provocatively and always willing to have some flirtatious fun. Cynthia is hispanic with a subtle accent and has long brown hair and hazel eyes. Henry first notices her out his apartment window before meeting her lost in the Subway. Believing to be having a dream, she offers Henry a 'special favour' if he can guide her to the exit. Might as well have a little fun if it's just a dream, right?",
+        backImage: "https://www.silenthillmemories.net/sh4/characters/cynthia.png",
+        charImage: "",
+        weapImage: "",
+        image1: "",
+        image2: "",
       }
     ]
   }
@@ -62,14 +71,8 @@ export default function Page() {
   return (
     <div>
       <Header data={headerData.data} />
-      <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
-        <img className="mb-150 w-160 invert" src='https://1000logos.net/wp-content/uploads/2021/04/Silent-Hill-Logo-1999.png' />
-      </div>
-      <img className="w-screen h-screen object-cover z-[-1]" src='https://blob.udgtv.com/images/2025/06/16/1-b223e271-focus-0-0-696-464.jpg' />
-      <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen" />
-      <div className="absolute top-[85%] h-screen w-screen">
-        <Characters data={charactersData.data} />
-      </div>
+      <HeroImage logo='/sh4d.png' back='https://wallpapercave.com/wp/wp15266238.jpg' phrase='"What the hell...?"' />
+      <Characters data={charactersData.data} />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import Header from "@/app/components/Header";
 import SoundCloudEmbed from "@/app/components/Soundcloud";
+import HeroImage from "@/app/components/HeroImage";
 
 const headerData = {
   data: [
@@ -27,11 +28,7 @@ export default function Page() {
   return (
     <div>
       <Header data={headerData.data} />
-      <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
-        <img className="mb-150 w-160 invert" src='https://1000logos.net/wp-content/uploads/2021/04/Silent-Hill-Logo-1999.png' />
-      </div>
-      <img className="w-screen h-screen object-cover z-[-1]" src='https://blob.udgtv.com/images/2025/06/16/1-b223e271-focus-0-0-696-464.jpg' />
-      <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen" />
+      <HeroImage logo='/sh4d.png' back='https://wallpapercave.com/wp/wp15266238.jpg' phrase='"What the hell...?"' />
       <div className="absolute top-[85%] w-full">
       <div className="grid grid-cols-2 max-w-[1400px] gap-4 mx-auto my-8 z-100">
         <div className="flex flex-col gap-2">

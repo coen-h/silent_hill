@@ -104,7 +104,7 @@ export default function SoundCloudPlayer({ code }: SoundCloudPlayerProps) {
 
       <div className="relative flex gap-4 p-2 items-center">
 
-        <div className="relative w-28 h-28 flex-shrink-0">
+        <div className="relative w-28 h-28 shrink-0">
 
           <img
               src={art}
@@ -144,7 +144,7 @@ export default function SoundCloudPlayer({ code }: SoundCloudPlayerProps) {
 
           <button
             onClick={toggle}
-            className="w-14 h-14 rounded-2xl bg-white text-black flex items-center justify-center text-xl hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition"
+            className="w-14 h-14 rounded-2xl bg-white text-black flex items-center cursor-pointer justify-center text-xl hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition"
           >
             {playing ? "❚❚" : "▶"}
           </button>
@@ -155,7 +155,7 @@ export default function SoundCloudPlayer({ code }: SoundCloudPlayerProps) {
             max="100"
             value={volume}
             onChange={changeVolume}
-            className="w-20 accent-white"
+            className="w-20 accent-white cursor-pointer"
           />
 
         </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import Header from "@/app/components/Header";
+import HeroImage from "@/app/components/HeroImage";
 
 const headerData = {
   data: [
@@ -26,11 +27,7 @@ export default function Page() {
   return (
     <div>
       <Header data={headerData.data} />
-      <div className="absolute flex items-center justify-center flex-col gap-2 h-screen w-screen">
-        <img className="mb-150 w-160 invert" src='https://1000logos.net/wp-content/uploads/2021/04/Silent-Hill-Logo-1999.png' />
-      </div>
-      <img className="w-screen h-screen object-cover -z-1" src='https://blob.udgtv.com/images/2025/06/16/1-b223e271-focus-0-0-696-464.jpg' />
-      <div className="absolute top-[30%] from-50% bg-linear-to-t from-neutral-950 w-screen h-screen z-0" />
+      <HeroImage logo='https://upload.wikimedia.org/wikipedia/commons/6/63/Silent_Hill_1999_ntsc_logo.PNG' back='https://blob.udgtv.com/images/2025/06/16/1-b223e271-focus-0-0-696-464.jpg' phrase='"They Looked Like Monsters To You?"' />
       <div className="w-screen h-screen relative">
         {/* <img src='https://i.redd.it/u86j5pyom66c1.jpg' className="absolute bottom-0 right-0 w-[600px] [mask-image:linear-gradient(to_top_left,black_10%,transparent_90%)]" />
         <img src='https://static0.srcdn.com/wordpress/wp-content/uploads/2021/10/Harry-Shoots-At-Nurses.jpg' className="absolute top-0 left-0 w-[600px] [mask-image:linear-gradient(to_bottom_right,black_10%,transparent_90%)]" /> */}
