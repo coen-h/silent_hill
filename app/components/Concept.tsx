@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-export default function Concept(Odata) {
+export default function Concept(Odata: {data: {videos: string[]}}) {
   const data = Odata.data;
   const [index, setIndex] = useState(0);
   const videos = data.videos;

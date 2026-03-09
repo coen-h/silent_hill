@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-export default function Header({ data }) {
+export default function Header({ data }: {data: { name: string; path: string; delay: number }[]}) {
   const games = [
     { name: "Silent Hill 1", path: "/sh1" },
     { name: "Silent Hill 2", path: "/sh2" },
@@ -28,8 +28,8 @@ export default function Header({ data }) {
             ))}
           </div>
         </div>
-        {data && data.map((button) => (
-          <Link href={button.path}>
+        {data && data.map((button, index) => (
+          <Link href={button.path} key={index}>
             <motion.button 
               transition={{ duration: 0.6, delay: button.delay }} 
               initial={{ opacity: 0, filter: "blur(8px)" }} 

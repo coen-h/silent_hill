@@ -3,8 +3,23 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 
-export default function Characters(Odata) {
-  const data = Odata.data;
+interface Character {
+  name: string;
+  desc: string;
+  backImage: string;
+  charImage: string;
+  weapImage?: string;
+  image1?: string;
+  image2?: string;
+}
+
+interface CharactersProps {
+  data: {
+    characters: Character[];
+  };
+}
+
+export default function Characters({ data }: CharactersProps) {
   const characters = data.characters;
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const selectedCharacter = hoveredIndex !== null ? characters[hoveredIndex] : null;
@@ -17,11 +32,11 @@ export default function Characters(Odata) {
         <div className="absolute inset-0 pointer-events-none bg-linear-to-t from-50% to-neutral-950" />
         <div className="max-w-[1700px] max-3xl:gap-8 max-2xl:gap-4 mx-auto grid grid-cols-4 max-xl:grid-cols-1 gap-12 px-4 py-24">
           {characters.map((character, key) => (
-            <div onClick={() => setHoveredIndex(key)} className="h-[600px] max-xl:h-[250px] shadow-neutral-950 bg-black/75 relative text-center rounded-lg overflow-hidden cursor-pointer">
+            <div key={key} onClick={() => setHoveredIndex(key)} className="h-[600px] max-xl:h-[250px] shadow-neutral-950 bg-black/75 relative text-center rounded-lg overflow-hidden cursor-pointer"> 
               <img className="absolute object-cover object-top inset-0 w-full h-full opacity-25 pointer-events-none" src={character.backImage}/>
               <p className="absolute w-full top-4 text-2xl">{character.name}</p>
               <p className="absolute w-full my-2 px-2 bottom-0 font-light line-clamp-3">{character.desc}</p>
-              <img className={`absolute top-1/10 ${!character.weapImage ? 'left-1/2 -translate-x-1/2' : 'left-1/10'}  h-[450px] max-xl:opacity-15 max-xl:left-6 max-xl:pointer-events-none max-xl:hidden`} src={character.charImage}/>
+              <img className={`absolute top-1/10 ${!character.weapImage ? 'left-1/2 -translate-x-1/2' : 'left-1/10'} h-[450px] max-xl:opacity-15 max-xl:left-6 max-xl:pointer-events-none max-xl:hidden`} src={character.charImage}/>
               {character.weapImage ? (
                 <img className="absolute top-2/12 xl:left-5/12 h-[380px] -rotate-12 max-xl:opacity-15 max-xl:right-4 max-xl:pointer-events-none max-xl:hidden" src={character.weapImage}/>
               ) : (
@@ -39,7 +54,7 @@ export default function Characters(Odata) {
                 <div className="w-[450px] flex justify-center relative rounded-lg">
                   <img className="absolute object-cover object-top inset-0 h-full opacity-20 pointer-events-none" src={selectedCharacter.backImage}/>
                   <div className="w-full h-full z-1 absolute bg-[radial-gradient(ellipse_50%_50%_at_center,transparent_40%,#0a0a0a_100%)] pointer-events-none rounded-lg" />
-                  <img className="h-full z-2 p-4" src={selectedCharacter.charImage} />
+                  <img className="h-full z-2 p-4 object-cover" src={selectedCharacter.charImage} />
                 </div>
                 <div className="flex flex-col gap-2 z-2 p-4">
                   <p className="text-4xl">{selectedCharacter.name}</p>

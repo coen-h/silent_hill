@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-export default function Story(Odata) {
+export default function Story(Odata: {data: {desc1: string, desc2: string}}) {
   const data = Odata.data;
 
   return (

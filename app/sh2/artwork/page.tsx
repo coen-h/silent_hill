@@ -1,7 +1,7 @@
 'use client';
 
 import Header from "@/app/components/Header";
-import HeroImage from "@/app/components/HeroImage";
+import HeroVideo from "@/app/components/HeroVideo";
 
 const headerData = {
   data: [
@@ -27,7 +27,7 @@ export default function Page() {
   return (
     <div>
       <Header data={headerData.data} />
-      <HeroImage logo='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/SILENT_HILL_2_LOGO_%28Alt.%29.svg/960px-SILENT_HILL_2_LOGO_%28Alt.%29.svg.png' back='https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23475976/sh2_art_char_15.jpeg' phrase='"In my restless dream, I see that town. Silent Hill."' />
+      <HeroVideo logo='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/SILENT_HILL_2_LOGO_%28Alt.%29.svg/960px-SILENT_HILL_2_LOGO_%28Alt.%29.svg.png' back='/1.mp4' phrase='"In my restless dream, I see that town. Silent Hill."' />
       <div className="absolute top-[85%] flex flex-col gap-4 w-screen h-screen">
         <div className="grid grid-cols-4 gap-4">
           <img className="z-100 w-full h-100 object-cover" src='https://i.guim.co.uk/img/media/187c7e3dc8e800a96f448e92e68ae7e75b67f165/111_78_1847_1109/master/1847.jpg?width=445&dpr=1&s=none&crop=none' />

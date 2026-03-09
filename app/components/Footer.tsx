@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-export default function Footer(Odata) {
+export default function Footer(Odata: {data: {company: string}}) {
   const data = Odata.data;
 
   return (

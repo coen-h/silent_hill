@@ -2,7 +2,7 @@
 
 import Header from "@/app/components/Header";
 import SoundCloudEmbed from "@/app/components/Soundcloud";
-import HeroImage from "@/app/components/HeroImage";
+import HeroVideo from "@/app/components/HeroVideo";
 
 const headerData = {
   data: [
@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <div>
       <Header data={headerData.data} />
-      <HeroImage logo='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/SILENT_HILL_2_LOGO_%28Alt.%29.svg/960px-SILENT_HILL_2_LOGO_%28Alt.%29.svg.png' back='https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23475976/sh2_art_char_15.jpeg' phrase='"In my restless dream, I see that town. Silent Hill."' />
+      <HeroVideo logo='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/SILENT_HILL_2_LOGO_%28Alt.%29.svg/960px-SILENT_HILL_2_LOGO_%28Alt.%29.svg.png' back='/1.mp4' phrase='"In my restless dream, I see that town. Silent Hill."' />
       <div className="absolute top-[85%] w-full">
       <div className="grid grid-cols-2 max-w-[1400px] gap-4 mx-auto my-8 z-100">
         <div className="flex flex-col gap-2">
